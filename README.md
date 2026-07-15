@@ -15,7 +15,7 @@ With its elegant Orange-themed Material Design interface and built-in HTTP serve
    - Automatically remembers and reconnects to your last used printer.
    
 2. **Local HTTP Print Bridge (Web POS Integration)**
-   - Start a local HTTP server directly on your Android device (e.g., `http://127.0.0.1:8080/print`).
+   - Start a local HTTP server directly on your Android device (e.g., `http://127.0.0.1:8080/print/receipt`).
    - Seamlessly print receipts from Web-based POS systems (like PHP, React, Vue, etc.) running on Chrome/Android browsers without needing native app wrappers!
    - Send raw JSON payloads containing text and base64 images directly to the printer.
 
@@ -53,15 +53,20 @@ You can download the latest, ready-to-install `.apk` file directly from the GitH
 
 ### 3. Printing via HTTP Bridge (For Web POS Developers)
 1. Open the **Bridge Print** menu in the DPThermal app and click **Start Server**.
-2. From your web application running on the same device, make an AJAX `POST` request to the provided local URL (e.g., `http://127.0.0.1:8080/print`).
-3. Payload format:
+2. From your web application running on the same device, make an AJAX `POST` request to the provided local URL (e.g., `http://127.0.0.1:8080/print/receipt`).
+3. Payload format (Array of receipt items):
 ```json
-{
-  "text": "Your receipt text here...",
-  "logo": "data:image/png;base64,iVBORw0KGgoAAA..." // Optional Base64 Image
-}
+[
+  { "type": "image", "content": "data:image/png;base64,..." },
+  { "type": "text", "content": "DPThermal Store", "align": "center", "bold": true },
+  { "type": "line" },
+  { "type": "text", "content": "Nasi Goreng      Rp15.000\nEs Teh           Rp5.000", "align": "left" },
+  { "type": "line" },
+  { "type": "qr", "content": "https://dpthermal.com", "align": "center" },
+  { "type": "feed", "lines": 2 }
+]
 ```
-*Note: You can view the live API documentation by clicking the URL link directly inside the app while the server is running.*
+*Note: You can view the live interactive API documentation by clicking the URL link directly inside the app while the server is running.*
 
 ### 4. Viewing Print Logs
 - All print jobs sent via the HTTP Bridge are recorded in the **Print Logs** menu.
