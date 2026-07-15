@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="images/banner.png" alt="DPThermal Banner" width="100%">
+  <img src="images/banner_orange.png" alt="DPThermal Banner" width="100%">
 </div>
 
 # DPThermal - Bluetooth Thermal Printer App & HTTP Bridge
