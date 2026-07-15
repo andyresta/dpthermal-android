@@ -1,0 +1,168 @@
+<resources>
+    <string name="app_name">DPThermal</string>
+    <string name="splash_subtitle">Printer Thermal Bluetooth</string>
+    <string name="printer_connection_title">Koneksi Printer</string>
+
+    <!-- Navigasi Sidebar -->
+    <string name="nav_home">Home</string>
+    <string name="nav_pengaturan_koneksi">Pengaturan Koneksi</string>
+    <string name="nav_pengaturan_nota">Pengaturan Nota</string>
+    <string name="nav_tes_cetak">Tes Cetak</string>
+    <string name="nav_help">Bantuan &amp; Panduan</string>
+    <string name="nav_drawer_open">Buka menu</string>
+    <string name="nav_drawer_close">Tutup menu</string>
+
+    <string name="nav_language_toggle">Ganti Bahasa (ID/EN)</string>
+
+    <!-- Home -->
+    <string name="home_welcome_title">Dasbor DPThermal</string>
+    <string name="home_welcome_desc">Pantau statistik cetakan harian dan status koneksi printer Anda di sini.</string>
+    
+    <string name="home_connection_status">Status Koneksi</string>
+    <string name="home_printer_connected">Terhubung ke %1$s</string>
+    <string name="home_printer_disconnected">Tidak ada printer yang terhubung</string>
+    <string name="home_print_stats_title">Total Cetak Hari Ini</string>
+    <string name="home_print_weekly_title">Statistik 7 Hari Terakhir</string>
+    <string name="home_btn_connect">Hubungkan Printer</string>
+
+    <!-- Help / Bantuan Fragment -->
+    <string name="help_title_bt">1. Cara Koneksi ke Printer Bluetooth</string>
+    <string name="help_desc_bt">Buka menu "Pengaturan Koneksi" pada sidebar. Pastikan Bluetooth dan Lokasi aktif. Klik tombol "Cari Printer", pilih printer thermal Anda dari daftar, dan pastikan status berubah menjadi "Terhubung".</string>
+    
+    <string name="help_title_spooler">2. Cara Print PDF dari Aplikasi Lain</string>
+    <string name="help_desc_spooler">Aktifkan layanan cetak DPThermal di pengaturan Android (Pengaturan -> Cetak -> Layanan Cetak -> Aktifkan DPThermal). Setelah aktif, buka dokumen PDF atau browser Chrome, pilih "Cetak / Print", lalu pilih printer tujuan "DPThermal".</string>
+    
+    <string name="help_title_bridge">3. Cara Menggunakan Bridge Print (HTTP)</string>
+    <string name="help_desc_bridge">Buka menu "Bridge Print (HTTP)" dan tekan "Aktifkan Server". Aplikasi ini akan menyediakan endpoint HTTP lokal yang bisa ditembak dengan JSON payload dari aplikasi web atau Point of Sale (POS) Anda. Lihat contoh payload di halaman tersebut.</string>
+
+    <!-- Pengaturan Koneksi -->
+    <string name="pengaturan_koneksi_title">Pengaturan Koneksi</string>
+    <string name="connection_status_title">Status Koneksi</string>
+    <string name="status_disconnected">Tidak terhubung</string>
+    <string name="status_connecting">Menghubungkan ke printer…</string>
+    <string name="status_connected">Terhubung ke %1$s</string>
+    <string name="status_failed">Koneksi gagal</string>
+    <string name="last_printer_title">Printer Terakhir</string>
+    <string name="last_printer_none">Belum ada printer yang pernah terhubung</string>
+    <string name="last_printer_info">%1$s\n%2$s</string>
+    <string name="paired_devices_title">Printer Bluetooth Tersedia</string>
+    <string name="paired_devices_hint">Pastikan printer sudah di-pair di Pengaturan Bluetooth Android, lalu ketuk untuk menghubungkan.</string>
+    <string name="no_paired_devices">Tidak ada perangkat Bluetooth yang dipasangkan.\nPair printer di Pengaturan → Bluetooth.</string>
+    <string name="printer_unknown_name">Printer Tanpa Nama</string>
+    <string name="action_reconnect">Hubungkan Ulang</string>
+    <string name="action_disconnect">Putuskan</string>
+    <string name="action_refresh">Muat Ulang</string>
+    <string name="permission_bluetooth_denied">Izin Bluetooth diperlukan untuk menghubungkan printer</string>
+    <string name="bluetooth_not_supported">Perangkat ini tidak mendukung Bluetooth</string>
+    <string name="bluetooth_enable_required">Aktifkan Bluetooth untuk melanjutkan</string>
+
+    <!-- Pengaturan Nota -->
+    <string name="pengaturan_nota_title">Pengaturan Nota</string>
+    <string name="paper_width_title">Lebar Kertas</string>
+    <string name="paper_width_hint">Pilih ukuran kertas sesuai printer thermal Anda.</string>
+    <string name="paper_width_58mm">58 mm (384 dot)</string>
+    <string name="paper_width_80mm">80 mm (576 dot)</string>
+    <string name="paper_width_saved">Lebar kertas disimpan: %1$d mm</string>
+    <string name="auto_cutter_title">Auto Cutter</string>
+    <string name="auto_cutter_desc">Otomatis memotong kertas setelah selesai mencetak</string>
+    <string name="auto_cashdrawer_title">Auto Open Cash Drawer</string>
+    <string name="auto_cashdrawer_desc">Otomatis membuka laci kasir setelah selesai mencetak</string>
+    <string name="setting_saved">Pengaturan disimpan</string>
+    <string name="codepage_title">Codepage Teks</string>
+    <string name="codepage_hint">Pilih encoding teks untuk printer ESC/POS. CP437/CP852 untuk printer lama yang tidak mendukung UTF-8.</string>
+    <string name="codepage_utf8">UTF-8 (default)</string>
+    <string name="codepage_cp437">CP437 (USA/Europe)</string>
+    <string name="codepage_cp852">CP852 (Central Europe)</string>
+
+    <!-- Tes Cetak -->
+    <string name="tes_cetak_title">Tes Cetak</string>
+    <string name="tes_cetak_text_label">Cetak Teks</string>
+    <string name="tes_cetak_text_hint">Ketik teks yang ingin dicetak…</string>
+    <string name="btn_cetak_teks">Cetak Teks</string>
+    <string name="tes_cetak_image_label">Cetak Gambar</string>
+    <string name="btn_pilih_gambar">Pilih Gambar</string>
+    <string name="btn_cetak_gambar">Cetak Gambar</string>
+    <string name="no_image_selected">Pilih gambar terlebih dahulu</string>
+    <string name="printer_not_connected_hint">Printer belum terhubung. Buka Pengaturan Koneksi dan hubungkan printer terlebih dahulu.</string>
+    <string name="test_print_success">Berhasil dikirim ke printer</string>
+    <string name="test_print_failed">Gagal mencetak: %1$s</string>
+    <string name="printing_in_progress">Mencetak…</string>
+
+    <!-- Scan & Pairing -->
+    <string name="scan_devices_title">Scan Perangkat Baru</string>
+    <string name="scan_devices_hint">Temukan printer Bluetooth yang belum dipasangkan lalu tekan Pair untuk menambahkannya.</string>
+    <string name="action_scan">Mulai Scan</string>
+    <string name="action_stop_scan">Hentikan Scan</string>
+    <string name="action_pair">Pair</string>
+    <string name="action_connect">Hubungkan</string>
+    <string name="action_unpair">Hapus Pair</string>
+    <string name="no_scan_results">Tidak ada perangkat ditemukan.\nPastikan printer dalam mode pairing.</string>
+    <string name="pairing_in_progress">Sedang pairing…</string>
+    <string name="scan_failed">Gagal memulai scan Bluetooth</string>
+    <string name="pair_failed">Gagal memulai proses pairing</string>
+    <string name="pair_success_title">Pairing Berhasil</string>
+    <string name="pair_success_connect_ask">%1$s berhasil dipasangkan. Hubungkan ke printer ini sekarang?</string>
+    <string name="unpair_confirm_title">Hapus Pairing</string>
+    <string name="unpair_confirm_message">Hapus pasangan dengan %1$s? Anda perlu melakukan pairing ulang untuk menggunakannya kembali.</string>
+    <string name="unpair_success">Perangkat berhasil dihapus dari daftar pasangan</string>
+    <string name="unpair_failed">Gagal menghapus pairing perangkat</string>
+    <string name="status_connected_short">● Terhubung</string>
+
+    <!-- Bridge Print -->
+    <string name="nav_bridge_print">Bridge Print</string>
+    <string name="nav_log_cetak">Log Cetak</string>
+    <string name="bridge_print_title">Bridge Print</string>
+    <string name="bridge_status_title">Status Server</string>
+    <string name="bridge_status_stopped">Server tidak aktif</string>
+    <string name="bridge_status_running">Server aktif di port %1$d</string>
+    <string name="bridge_url_format">URL: http://localhost:%1$d/print</string>
+    <string name="bridge_action_start">Mulai Server</string>
+    <string name="bridge_action_stop">Hentikan Server</string>
+    <string name="bridge_port_title">Pengaturan Port</string>
+    <string name="bridge_port_hint">Port 8080–9090, kelipatan 5. Gunakan tombol +/− jika port bentrok dengan aplikasi lain.</string>
+    <string name="bridge_port_decrement">Turunkan port</string>
+    <string name="bridge_port_increment">Naikkan port</string>
+    <string name="bridge_port_decrement_symbol">−</string>
+    <string name="bridge_port_increment_symbol">+</string>
+    <string name="bridge_guide_title">Cara Penggunaan</string>
+    <string name="bridge_guide_content">Kirim request POST ke URL berikut dari website atau aplikasi Anda. Printer harus sudah terhubung di menu Pengaturan Koneksi.</string>
+    <string name="bridge_notif_channel_name">Print Bridge Server</string>
+    <string name="bridge_notif_channel_desc">Notifikasi status HTTP server bridge untuk cetak thermal</string>
+    <string name="bridge_notif_running_title">Print Bridge Aktif</string>
+    <string name="bridge_notif_running_content">Server berjalan di localhost:%1$d</string>
+    <string name="bridge_notif_error_title">Print Bridge Gagal Start</string>
+    <string name="bridge_notif_error_content">Port %1$d tidak dapat digunakan. Coba port lain.</string>
+    <string name="bridge_notif_action_stop">Hentikan</string>
+
+    <!-- Log Cetak -->
+    <string name="log_cetak_title">Log Cetak</string>
+    <string name="log_cetak_desc">Riwayat job cetak dari Print Bridge. Job yang berhasil dapat dicetak ulang dengan label \"CETAK ULANG\" di akhir struk.</string>
+    <string name="log_cetak_empty">Belum ada log cetak.</string>
+    <string name="log_cetak_clear">Hapus Semua Log</string>
+    <string name="log_cetak_cleared">Log cetak dihapus</string>
+    <string name="log_cetak_reprint">Cetak Ulang</string>
+    <string name="log_cetak_reprinting">Mencetak ulang…</string>
+    <string name="log_cetak_reprint_ok">Cetak ulang berhasil</string>
+    <string name="log_cetak_reprint_failed">Cetak ulang gagal: %1$s</string>
+    <string name="log_cetak_status_ok">Berhasil</string>
+    <string name="log_cetak_status_failed">Gagal</string>
+
+    <!-- Widget Bridge -->
+    <string name="widget_bridge_title">DPThermal Bridge</string>
+    <string name="widget_bridge_desc">Quick Action start/stop Print Bridge server</string>
+    <string name="widget_bridge_running">Aktif · port %1$d</string>
+    <string name="widget_bridge_stopped">Tidak aktif</string>
+
+    <!-- Print Service -->
+    <string name="print_service_label">DPThermal</string>
+    <string name="print_service_printer_desc">Printer thermal Bluetooth</string>
+    <string name="print_service_hint">Aktifkan layanan cetak DPThermal di Pengaturan → Cetak → Layanan Cetak, lalu hubungkan printer di menu Pengaturan Koneksi.</string>
+    
+    <string name="log_cetak_payload_label">Payload (Raw Data):</string>
+    <string name="log_cetak_view_raw">Raw JSON</string>
+    <string name="log_cetak_view_preview">Preview Nota</string>
+    <string name="log_cetak_preview_spooler_unsupported">Preview visual tidak tersedia untuk dokumen dari Print Spooler.</string>
+    <string name="log_cetak_preview_invalid">Format data tidak didukung untuk preview.</string>
+    
+    <string name="action_close">Tutup</string>
+</resources>

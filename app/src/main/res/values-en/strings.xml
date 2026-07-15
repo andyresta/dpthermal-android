@@ -1,0 +1,169 @@
+<resources>
+    <string name="app_name">DPThermal</string>
+    <string name="splash_subtitle">Bluetooth Thermal Printer</string>
+    <string name="printer_connection_title">Printer Connection</string>
+
+    <!-- Navigasi Sidebar -->
+    <string name="nav_home">Home</string>
+    <string name="nav_pengaturan_koneksi">Connection Settings</string>
+    <string name="nav_pengaturan_nota">Receipt Settings</string>
+    <string name="nav_tes_cetak">Test Print</string>
+    <string name="nav_help">Help &amp; Guide</string>
+    <string name="nav_drawer_open">Open menu</string>
+    <string name="nav_drawer_close">Close menu</string>
+
+    <!-- New string for language toggle -->
+    <string name="nav_language_toggle">Switch Language (EN/ID)</string>
+
+    <!-- Home -->
+    <string name="home_welcome_title">DPThermal Dashboard</string>
+    <string name="home_welcome_desc">Monitor daily print statistics and your printer connection status here.</string>
+    
+    <string name="home_connection_status">Connection Status</string>
+    <string name="home_printer_connected">Connected to %1$s</string>
+    <string name="home_printer_disconnected">No printer connected</string>
+    <string name="home_print_stats_title">Total Prints Today</string>
+    <string name="home_print_weekly_title">7 Days Statistics</string>
+    <string name="home_btn_connect">Connect Printer</string>
+
+    <!-- Help / Bantuan Fragment -->
+    <string name="help_title_bt">1. How to Connect to Bluetooth Printer</string>
+    <string name="help_desc_bt">Open "Connection Settings" on the sidebar. Ensure Bluetooth and Location are active. Click "Scan Printers", select your thermal printer from the list, and make sure the status changes to "Connected".</string>
+    
+    <string name="help_title_spooler">2. How to Print PDF from Other Apps</string>
+    <string name="help_desc_spooler">Enable DPThermal print service in Android settings (Settings -> Print -> Print Services -> Enable DPThermal). Once active, open a PDF document or Chrome browser, select "Print", then choose "DPThermal" as the destination printer.</string>
+    
+    <string name="help_title_bridge">3. How to Use Bridge Print (HTTP)</string>
+    <string name="help_desc_bridge">Open "Bridge Print (HTTP)" menu and press "Start Server". This app will provide a local HTTP endpoint that can be hit with a JSON payload from your web app or Point of Sale (POS). See the example payload on that page.</string>
+
+    <!-- Pengaturan Koneksi -->
+    <string name="pengaturan_koneksi_title">Connection Settings</string>
+    <string name="connection_status_title">Connection Status</string>
+    <string name="status_disconnected">Disconnected</string>
+    <string name="status_connecting">Connecting to printer…</string>
+    <string name="status_connected">Connected to %1$s</string>
+    <string name="status_failed">Connection failed</string>
+    <string name="last_printer_title">Last Printer</string>
+    <string name="last_printer_none">No printer has been connected</string>
+    <string name="last_printer_info">%1$s\n%2$s</string>
+    <string name="paired_devices_title">Available Bluetooth Printers</string>
+    <string name="paired_devices_hint">Make sure the printer is paired in Android Bluetooth Settings, then tap to connect.</string>
+    <string name="no_paired_devices">No paired Bluetooth devices.\nPair printer in Settings → Bluetooth.</string>
+    <string name="printer_unknown_name">Unknown Printer</string>
+    <string name="action_reconnect">Reconnect</string>
+    <string name="action_disconnect">Disconnect</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="permission_bluetooth_denied">Bluetooth permission is required to connect printer</string>
+    <string name="bluetooth_not_supported">This device does not support Bluetooth</string>
+    <string name="bluetooth_enable_required">Enable Bluetooth to continue</string>
+
+    <!-- Pengaturan Nota -->
+    <string name="pengaturan_nota_title">Receipt Settings</string>
+    <string name="paper_width_title">Paper Width</string>
+    <string name="paper_width_hint">Select paper size according to your thermal printer.</string>
+    <string name="paper_width_58mm">58 mm (384 dots)</string>
+    <string name="paper_width_80mm">80 mm (576 dots)</string>
+    <string name="paper_width_saved">Saved paper width: %1$d mm</string>
+    <string name="auto_cutter_title">Auto Cutter</string>
+    <string name="auto_cutter_desc">Automatically cut paper after printing</string>
+    <string name="auto_cashdrawer_title">Auto Open Cash Drawer</string>
+    <string name="auto_cashdrawer_desc">Automatically open cash drawer after printing</string>
+    <string name="setting_saved">Settings saved</string>
+    <string name="codepage_title">Text Codepage</string>
+    <string name="codepage_hint">Select text encoding for ESC/POS printer. CP437/CP852 for older printers without UTF-8 support.</string>
+    <string name="codepage_utf8">UTF-8 (default)</string>
+    <string name="codepage_cp437">CP437 (USA/Europe)</string>
+    <string name="codepage_cp852">CP852 (Central Europe)</string>
+
+    <!-- Tes Cetak -->
+    <string name="tes_cetak_title">Test Print</string>
+    <string name="tes_cetak_text_label">Print Text</string>
+    <string name="tes_cetak_text_hint">Type text to print…</string>
+    <string name="btn_cetak_teks">Print Text</string>
+    <string name="tes_cetak_image_label">Print Image</string>
+    <string name="btn_pilih_gambar">Select Image</string>
+    <string name="btn_cetak_gambar">Print Image</string>
+    <string name="no_image_selected">Select an image first</string>
+    <string name="printer_not_connected_hint">Printer is not connected. Go to Connection Settings to connect a printer first.</string>
+    <string name="test_print_success">Successfully sent to printer</string>
+    <string name="test_print_failed">Failed to print: %1$s</string>
+    <string name="printing_in_progress">Printing…</string>
+
+    <!-- Scan & Pairing -->
+    <string name="scan_devices_title">Scan New Devices</string>
+    <string name="scan_devices_hint">Find unpaired Bluetooth printers and tap Pair to add them.</string>
+    <string name="action_scan">Start Scan</string>
+    <string name="action_stop_scan">Stop Scan</string>
+    <string name="action_pair">Pair</string>
+    <string name="action_connect">Connect</string>
+    <string name="action_unpair">Unpair</string>
+    <string name="no_scan_results">No devices found.\nMake sure printer is in pairing mode.</string>
+    <string name="pairing_in_progress">Pairing…</string>
+    <string name="scan_failed">Failed to start Bluetooth scan</string>
+    <string name="pair_failed">Failed to start pairing process</string>
+    <string name="pair_success_title">Pairing Successful</string>
+    <string name="pair_success_connect_ask">%1$s paired successfully. Connect to this printer now?</string>
+    <string name="unpair_confirm_title">Unpair Device</string>
+    <string name="unpair_confirm_message">Unpair %1$s? You will need to pair again to use it.</string>
+    <string name="unpair_success">Device successfully unpaired</string>
+    <string name="unpair_failed">Failed to unpair device</string>
+    <string name="status_connected_short">● Connected</string>
+
+    <!-- Bridge Print -->
+    <string name="nav_bridge_print">Bridge Print</string>
+    <string name="nav_log_cetak">Print Logs</string>
+    <string name="bridge_print_title">Bridge Print</string>
+    <string name="bridge_status_title">Server Status</string>
+    <string name="bridge_status_stopped">Server is inactive</string>
+    <string name="bridge_status_running">Server running on port %1$d</string>
+    <string name="bridge_url_format">URL: http://localhost:%1$d/print</string>
+    <string name="bridge_action_start">Start Server</string>
+    <string name="bridge_action_stop">Stop Server</string>
+    <string name="bridge_port_title">Port Settings</string>
+    <string name="bridge_port_hint">Port 8080–9090, in multiples of 5. Use +/- if port conflicts with another app.</string>
+    <string name="bridge_port_decrement">Decrease port</string>
+    <string name="bridge_port_increment">Increase port</string>
+    <string name="bridge_port_decrement_symbol">−</string>
+    <string name="bridge_port_increment_symbol">+</string>
+    <string name="bridge_guide_title">How to Use</string>
+    <string name="bridge_guide_content">Send a POST request to this URL from your website or app. Printer must be connected in Connection Settings.</string>
+    <string name="bridge_notif_channel_name">Print Bridge Server</string>
+    <string name="bridge_notif_channel_desc">Notification for HTTP bridge server status for thermal printing</string>
+    <string name="bridge_notif_running_title">Print Bridge Active</string>
+    <string name="bridge_notif_running_content">Server is running on localhost:%1$d</string>
+    <string name="bridge_notif_error_title">Print Bridge Failed to Start</string>
+    <string name="bridge_notif_error_content">Port %1$d cannot be used. Try another port.</string>
+    <string name="bridge_notif_action_stop">Stop</string>
+
+    <!-- Log Cetak -->
+    <string name="log_cetak_title">Print Logs</string>
+    <string name="log_cetak_desc">Print job history from Print Bridge. Successful jobs can be reprinted with a "REPRINT" label at the end.</string>
+    <string name="log_cetak_empty">No print logs yet.</string>
+    <string name="log_cetak_clear">Clear All Logs</string>
+    <string name="log_cetak_cleared">Print logs cleared</string>
+    <string name="log_cetak_reprint">Reprint</string>
+    <string name="log_cetak_reprinting">Reprinting…</string>
+    <string name="log_cetak_reprint_ok">Reprint successful</string>
+    <string name="log_cetak_reprint_failed">Reprint failed: %1$s</string>
+    <string name="log_cetak_status_ok">Success</string>
+    <string name="log_cetak_status_failed">Failed</string>
+
+    <!-- Widget Bridge -->
+    <string name="widget_bridge_title">DPThermal Bridge</string>
+    <string name="widget_bridge_desc">Quick Action start/stop Print Bridge server</string>
+    <string name="widget_bridge_running">Active · port %1$d</string>
+    <string name="widget_bridge_stopped">Inactive</string>
+
+    <!-- Print Service -->
+    <string name="print_service_label">DPThermal</string>
+    <string name="print_service_printer_desc">Bluetooth thermal printer</string>
+    <string name="print_service_hint">Enable DPThermal print service in Settings → Print → Print Services, then connect printer in Connection Settings.</string>
+    
+    <string name="log_cetak_payload_label">Payload (Raw Data):</string>
+    <string name="log_cetak_view_raw">Raw JSON</string>
+    <string name="log_cetak_view_preview">Receipt Preview</string>
+    <string name="log_cetak_preview_spooler_unsupported">Visual preview not available for Print Spooler documents.</string>
+    <string name="log_cetak_preview_invalid">Data format is not supported for preview.</string>
+    
+    <string name="action_close">Close</string>
+</resources>

@@ -1,0 +1,37 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MaxThermal" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/orange_500</item>
+        <item name="colorPrimaryVariant">@color/orange_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/deep_orange_200</item>
+        <item name="colorSecondaryVariant">@color/deep_orange_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="21">?attr/colorPrimaryVariant</item>
+    </style>
+
+    <style name="Theme.MaxThermal.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/orange_500</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="windowSplashScreenIconBackgroundColor">@color/orange_500</item>
+        <item name="postSplashScreenTheme">@style/Theme.MaxThermal.SplashContent</item>
+    </style>
+
+    <!-- Tema konten splash setelah system splash screen (sama warna agar transisi mulus). -->
+    <style name="Theme.MaxThermal.SplashContent" parent="Theme.MaxThermal">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/splash_background</item>
+        <item name="android:statusBarColor">@color/orange_500</item>
+        <item name="android:navigationBarColor">@color/orange_500</item>
+    </style>
+
+    <!-- Overlay toolbar: ikon navigasi (hamburger) dan teks putih di header ungu. -->
+    <style name="ThemeOverlay.DPThermal.Toolbar" parent="ThemeOverlay.MaterialComponents.Toolbar.Primary">
+        <item name="colorControlNormal">@color/white</item>
+        <item name="android:textColorPrimary">@color/white</item>
+    </style>
+</resources>

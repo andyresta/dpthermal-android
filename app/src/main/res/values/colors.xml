@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="orange_200">#FFCC80</color>
+    <color name="orange_500">#FF9800</color>
+    <color name="orange_700">#F57C00</color>
+    <color name="deep_orange_200">#FFAB91</color>
+    <color name="deep_orange_700">#E64A19</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="status_connected">#FF2E7D32</color>
+    <color name="status_connecting">#FFF57C00</color>
+    <color name="status_disconnected">#FF757575</color>
+    <color name="status_failed">#FFC62828</color>
+    <color name="log_success">#FF2E7D32</color>
+    <color name="log_failed">#FFC62828</color>
+</resources>
