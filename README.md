@@ -29,13 +29,19 @@ With its elegant Orange-themed Material Design interface and built-in HTTP serve
    - Auto Cutter & Auto Cash Drawer kick support.
    - Legacy text encoding (Codepage 437/852) for older Chinese printers.
 
-## 📥 Download APK
+## 📥 Download
 
+### 📱 Android (APK)
 You can download the latest, ready-to-install `.apk` file directly from the GitHub Releases page.
 
 👉 **[Download Latest APK Here](../../releases/latest)**
 
 *(Simply download the file to your Android device, allow installation from unknown sources, and install!)*
+
+### 💻 Desktop Version
+A desktop version of DPThermal is also available.
+
+👉 **[Download Desktop Version V1.0 Here](https://github.com/andyresta/dpthermal-dekstop/releases/tag/V1.0)**
 
 ## 🛠️ How to Use
 
